@@ -1511,6 +1511,12 @@ ul.about {
 	border: none;
 }
 
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	max-height: 300px;
+	margin: 0 auto;
+}
+
+
 .carousel-indicators li.active {
 	background-color: #fff;
 	border: 1px solid #ccc;
