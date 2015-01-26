@@ -371,11 +371,21 @@ p {
     font-size: 14px;
     line-height: 22px;
     text-align: left;
-    margin: 0;
+    margin: 10px 0;
     color: #999 !important;
     font-family: 'Lato', sans-serif;
 	/* custom */
 	font-weight: 400;
+}
+.postPage li {
+	font-size: 14px;
+	line-height: 22px;
+	text-align: left;
+	margin: 10px 0 10px 10px;
+	color: #999 !important;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	list-style-type: disc; 
 }
 .active-hi-icon {
     background: #04B2E8 !important;
@@ -912,6 +922,7 @@ h2.resp-accordion:hover {
     text-transform: uppercase;
     padding-top: 2px;
     margin-bottom: 5px;
+		width: 100%;
 }
 /*--------------------------------------------------
 ---------------------- Profile ---------------------
@@ -1130,12 +1141,14 @@ ul.about {
 
 .widget-profil  p {
     border-left: 0px;
+	font-weight: 700;
 }
 
 .widget-profil #profile_desc
 {
     padding-top: 15px;
     padding-bottom: 15px;
+	
 }
 
 .widget-profil #profile_info
@@ -1668,6 +1681,7 @@ ul.about {
     color: #CCCCCC;
     font-style: normal;
 }
+
 .tag {
     background: #DDDDDD;
     color: #000000;
