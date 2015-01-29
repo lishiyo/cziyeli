@@ -325,6 +325,8 @@ jQuery(document).ready(function($) {
 	if (pagina.indexOf("#post-") != -1) {
 	
 		$('#blog-page').hide();
+// 		$('#blog_page').empty();
+		$('.content-post').hide();
 
 		$(postdetail).show();
 		$(".tabs-blog").trigger('click');
@@ -342,6 +344,7 @@ jQuery(document).ready(function($) {
 	if (pagina.indexOf("#post-") != -1) {
 	
 	$('#blog-page').hide();
+		$('.content-post').hide();
 	
 	$(postdetail).show();
 	$(".tabs-blog").trigger('click');
