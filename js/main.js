@@ -33,35 +33,35 @@ jQuery(document).ready(function($) {
 	/* ---------------------------------------------------------------------- */
 	
 	$('#verticalTab').easyResponsiveTabs({
-	type: 'vertical',
-	width: 'auto',
-	fit: true
+		type: 'vertical',
+		width: 'auto',
+		fit: true
 	});
 	
 	$("h2.resp-accordion").click(function() {
-	$(this).find(".icon_menu").addClass("icon_menu_active");
-	$("h2.resp-accordion").not(this).find(".icon_menu").removeClass("icon_menu_active");
-	
-	/*	Scroll To */
-	$('html, body').animate({scrollTop: $('h2.resp-accordion').offset().top - 50}, 600);
+		$(this).find(".icon_menu").addClass("icon_menu_active");
+		$("h2.resp-accordion").not(this).find(".icon_menu").removeClass("icon_menu_active");
+
+		/*	Scroll To */
+		$('html, body').animate({scrollTop: $('h2.resp-accordion').offset().top - 50}, 600);
 	});
 	
 	$(".resp-tabs-list li").click(function() {
-	$(this).find(".icon_menu").addClass("icon_menu_active");
-	$(".resp-tabs-list li").not(this).find(".icon_menu").removeClass("icon_menu_active");
+		$(this).find(".icon_menu").addClass("icon_menu_active");
+		$(".resp-tabs-list li").not(this).find(".icon_menu").removeClass("icon_menu_active");
 	});
 	
 	
 	$(".resp-tabs-list li").hover(function() {
-	$(this).find(".icon_menu").addClass("icon_menu_hover");
+		$(this).find(".icon_menu").addClass("icon_menu_hover");
 	}, function() {
-	$(this).find(".icon_menu").removeClass("icon_menu_hover");
+		$(this).find(".icon_menu").removeClass("icon_menu_hover");
 	});
 	
 	$("h2.resp-accordion").hover(function() {
-	$(this).find(".icon_menu").addClass("icon_menu_hover");
+		$(this).find(".icon_menu").addClass("icon_menu_hover");
 	}, function() {
-	$(this).find(".icon_menu").removeClass("icon_menu_hover");
+		$(this).find(".icon_menu").removeClass("icon_menu_hover");
 	});
 	
 	/* ---------------------------------------------------------------------- */
@@ -85,39 +85,41 @@ jQuery(document).ready(function($) {
 	var animation_style = 'bounceIn';
 	
 	$('.dropdown-select').change(function() {
-	animation_style = $('.dropdown-select').val();
+		animation_style = $('.dropdown-select').val();
 	});
 	
 	
 	$('ul.resp-tabs-list li[class^=tabs-]').click(function() {
-	
-	var tab_name = $(this).attr('data-tab-name');
-	
-	$('.resp-tabs-container').addClass('animated ' + animation_style);
-	$('.resp-tabs-container').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-	$('.resp-tabs-container').removeClass('animated ' + animation_style);
-	});
-	
-	$(".content_2").mCustomScrollbar("destroy");
-	$(".content_2").mCustomScrollbar({
-	theme: "dark-2",
-	contentTouchScroll: true,
-	advanced: {
-	updateOnContentResize: true,
-	updateOnBrowserResize: true,
-	autoScrollOnFocus: false
-	}
-	});
-	
-	if (tab_name == "contact")
-	initialize();
-	
-	return false;
-	});
+			var tab_name = $(this).attr('data-tab-name');
+			
+			$('.resp-tabs-container').addClass('animated ' + animation_style);
+			$('.resp-tabs-container').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+				$('.resp-tabs-container').removeClass('animated ' + animation_style);
+			});
+
+			$(".content_2").mCustomScrollbar("destroy");
+			$(".content_2").mCustomScrollbar({
+					theme: "dark-2",
+					contentTouchScroll: true,
+					advanced: {
+						updateOnContentResize: true,
+						updateOnBrowserResize: true,
+						autoScrollOnFocus: false
+					}
+			});
+
+			if (tab_name == "contact") {
+				initialize();
+			}		
+
+			return false;
+		
+		});
 	
 	$("#verticalTab h2.resp-accordion").click(function() {
-	initialize();
+		initialize();
 	});
+
 	
 	/* ---------------------------------------------------------------------- */
 	/* ---------------------- redimensionnement ----------------------------- */
@@ -135,13 +137,13 @@ jQuery(document).ready(function($) {
 	$(".content_2").css("height", "580px");
 	$(".content_2").mCustomScrollbar("destroy");
 	$(".content_2").mCustomScrollbar({
-	theme: "dark-2",
-	contentTouchScroll: true,
-	advanced: {
-	updateOnContentResize: true,
-	updateOnBrowserResize: true,
-	autoScrollOnFocus: false
-	}
+		theme: "dark-2",
+		contentTouchScroll: true,
+		advanced: {
+			updateOnContentResize: true,
+			updateOnBrowserResize: true,
+			autoScrollOnFocus: false
+		}
 	});
 	
 	}
@@ -153,7 +155,7 @@ jQuery(document).ready(function($) {
 	window.addEventListener('resize', redimensionnement, false);
 	
 	$("#verticalTab h2.resp-accordion").click(function() {
-	initialize();
+		initialize();
 	});
 	
 	/* ---------------------------------------------------------------------- */
@@ -295,22 +297,22 @@ jQuery(document).ready(function($) {
 	
 	var map;
 	function initialize() {
-	map = new GMaps({
-	div: '#map',
-	lat: -37.817917,
-	lng: 144.965065,
-	zoom: 16
-	
-	});
-	map.addMarker({
-	lat: -37.81792,
-	lng: 144.96506,
-	title: 'Marker with InfoWindow',
-	icon: 'images/map-marker.png',
-	infoWindow: {
-	content: '<p>Melbourne Victoria, 300, Australia</p>'
-	}
-	});
+		map = new GMaps({
+			div: '#map',
+			lat: 40.72493,
+			lng: -73.99660,
+			zoom: 16
+		});
+		
+// 		map.addMarker({
+// 			lat: -37.81792,
+// 			lng: 144.96506,
+// 			title: 'Marker with InfoWindow',
+// 			icon: 'images/map-marker.png',
+// 			infoWindow: {
+// 				content: '<p>Melbourne Victoria, 300, Australia</p>'
+// 			}
+// 		});
 	}
 	
 	/* ---------------------------------------------------------------------- */
@@ -460,7 +462,7 @@ jQuery(document).ready(function($) {
 	var $this = $(this);
 	
 	if ($(this).prop('checked')) {
-	window.location.replace($this.val());
+		window.location.replace($this.val());
 	}
 	});
 	
@@ -479,7 +481,7 @@ jQuery(document).ready(function($) {
 			'profile',
 			'resume',
 			'portfolio',
-			'blog',
+// 			'blog',
 			'contact'
 		];
 		
