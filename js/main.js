@@ -357,20 +357,20 @@ jQuery(document).ready(function($) {
 	});
 	
 	//pagination All
-	$('.content-post a').click(function() {
-	var pagina = $(this).attr('href');
+// 	$('.content-post a').click(function() {
+// 	var pagina = $(this).attr('href');
 	
-	if (pagina == "#blog") {
+// 	if (pagina == "#blog") {
 	
-	$('.content-post').hide();
-	$('#blog-page').show();
-	$(".tabs-blog").trigger('click');
+// 	$('.content-post').hide();
+// 	$('#blog-page').show();
+// 	$(".tabs-blog").trigger('click');
 	
-	}
+// 	}
 	
-	return false;
+// 	return false;
 	
-	});
+// 	});
 	
 	//pagination blog
 	$('.content-post #pagination').click(function() {
