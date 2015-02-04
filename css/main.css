@@ -286,6 +286,21 @@ h2.resp-tab-active span.resp-arrow {
     border-right: 6px solid transparent;
     border-bottom: 12px solid #9B9797;
 }
+
+li.tabs-portfolio {
+	background: #40e0d0;
+	color: #fff;
+}
+
+li.tabs-portfolio i.fa {
+	color: #40e0d0;
+}
+
+li.tabs-portfolio i.fa.icon_menu_hover, li.tabs-portfolio i.fa.icon_menu_active {
+	background: #40e0d0 !important;
+	color: #fff !important;
+}
+
 /*-----------------------------------*/
 /*---------Accordion styles----------*/
 /*-----------------------------------*/
