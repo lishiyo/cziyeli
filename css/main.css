@@ -1438,6 +1438,20 @@ ul.about {
     -moz-transform: rotateX(10deg);
     transform: rotateX(10deg);
 }
+
+.profile-resume {
+	font-size: 16px;
+	float: left;
+	padding: 5px;
+	width: 100%;
+	margin: 15px auto;
+}
+
+.profile-resume:hover {
+	background: #ccc;
+	color: white;
+}
+
 /*--------------------------------------------------
 ---------------------- Resume ----------------------
 ---------------------------------------------------*/
