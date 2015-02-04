@@ -103,6 +103,10 @@ a {
     text-decoration: none !important;
 }
 
+a:hover, a:focus {
+	color: #40e0d0;
+}
+
 .tab-content {
 	margin-bottom: 60px;
 }
